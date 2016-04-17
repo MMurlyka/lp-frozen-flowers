@@ -1,0 +1,53 @@
+.heading-decor {
+	content: "";
+	display: block;
+	width: 120px;
+	height: 4px;
+	margin: 14px auto 0;
+}
+
+
+.h-d-orange {
+	&:after:extend(.heading-decor) {
+		background: #ff5b44;
+	}
+}
+
+.h-d-light {
+	&:after:extend(.heading-decor) {
+		background: @light;
+	}
+}
+
+.h-d-white {
+	&:after:extend(.heading-decor) {
+		background: white;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	&:extend(.text-uppercase);
+	
+	font-family: @robotoCond;
+}
+
+h1 {
+	font-size: 45px;
+	
+	@media (min-width: @screen-lg-min) {
+		font-size: 60px;
+	}
+}
+
+h2 {
+	font-size: 30px;
+	letter-spacing: -0.5px;
+	
+	@media (min-width: @screen-lg-min) {
+		font-size: 36px;
+	}
+}
+
+.text-orange {
+	color: @orange;
+}
