@@ -99,6 +99,8 @@ $(window).load(function() {
 				
 				$form.trigger('reset');
 				yaCounter36798385.reachGoal('form');
+				
+				return false;
 			}
 		},
 
